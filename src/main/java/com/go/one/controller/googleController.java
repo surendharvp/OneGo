@@ -25,7 +25,7 @@ public class googleController {
             Session emailSession = Session.getDefaultInstance(properties);
 
             //create the POP3 store object and connect with the pop server
-            JksSslBundleProperties.Store store = emailSession.getStore("pop3s");
+           Store store = emailSession.getStore("pop3s");
 
             store.connect(host, user, password);
 
@@ -64,8 +64,8 @@ public class googleController {
 
         String host = "pop.gmail.com";// change accordingly
         String mailStoreType = "pop3";
-        String username = "yourmail@gmail.com";// change accordingly
-        String password = "*****";// change accordingly
+        String username = "surendharvp2000@gmail.com";// change accordingly
+        String password = "Suren@123";// change accordingly
 
         check(host, mailStoreType, username, password);
 
